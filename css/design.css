@@ -1,0 +1,280 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face{
+    src: url(../Appdev/fonts/Sacramento-Regular.ttf);
+    font-family: sacramento;
+}
+@font-face{
+    src: url(../Appdev/fonts/Montserrat/Montserrat-SemiBold.ttf);
+    font-family: montserrat;
+}
+@font-face{
+    src: url(../Appdev/fonts/Merriweather/Merriweather-Regular.ttf);
+    font-family: merriweather;
+}
+@font-face{
+    src: url(../Appdev/fonts/Montserrat/Montserrat-Light.ttf);
+    font-family: montserr;
+}
+@keyframes gradience{
+    0%{ opacity: 0;}
+    100%{ opacity: 3 ;}
+}
+@keyframes move{
+    0%{
+        opacity: 0; 
+        transform: translateX(5rem);
+    }
+    100%{opacity: 3;}
+}
+@keyframes text{
+    0%{ opacity: 3;}   
+    10%{ letter-spacing: -5px;}
+    20%{ letter-spacing: 5px;}
+    40%{ letter-spacing: 8px;}
+    100%{ opacity: 0;}   
+}
+@keyframes bird{
+    0%{ margin-left: 30px;}
+    100%{ margin-left: 1000px;}
+}
+@keyframes text2{
+    0%{ opacity: 3;}   
+    10%{ letter-spacing: -2px;}
+    20%{ letter-spacing: 3px;}
+    40%{ letter-spacing: 5px;}
+    100%{ opacity: 0;}   
+}
+@keyframes rise{
+    0%{ opacity: 3;}
+    100%{
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+}
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.header{
+    background: linear-gradient(to bottom, #a1d8ee ,#83c1e6, #6ac2f5, #4285c9);
+    -webkit-background-clip: border-box;
+    animation: gradience 5s linear;
+}
+#cloud1{
+    position: relative;
+    height: 15%;
+    width: 15.5%;
+    padding-left: 30%;
+    padding-top: 1in;
+    animation: move 5s alternate infinite;
+}
+h1{
+    padding-top: 1in;
+    font-family: sacramento;
+    font-weight: bolder;
+    font-size: 60px;
+    background: linear-gradient(to right, #f32170 ,#ff3B07,#084953, #ff00eb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    position: relative;
+    animation: text 3.2s alternate linear;
+}
+#birds2{
+    height: 1in;
+    width: 1.3in;
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    padding-bottom: 500px;
+    transform: translateX(10rem);
+    animation: bird 10s  linear infinite;
+}
+#birds{
+    height: 1in;
+    width: 1.3in;
+    position: absolute;
+    left: -10px;
+    bottom: 20px;
+    padding-bottom: 20px;
+    transform: translateX(10rem);
+    animation: bird 10s  reverse linear infinite;
+}
+h2{
+    padding-bottom: 1in;
+    font-family: montserrat;
+    font-weight: lighter;
+    font-size: 32px;
+    background: linear-gradient(to right, #11aaee ,#0077bb, #113355, #0077bb,#11aaee);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    position: relative;
+    animation: text2 2.7s alternate-reverse linear;
+}
+#cloud2{
+    padding: 0;
+    position: absolute;
+    height: 15%;
+    width: 15.5%;
+    animation: move 5s alternate-reverse infinite ;
+}
+#sun-gif{
+    position: absolute;
+    height: 2in;
+    width: 2.5in;
+    padding-left: 21%;
+    animation: rise 5s reverse linear;
+}
+#mountain{
+    position: relative;
+    padding: unset;
+    padding-top: 5%;
+    height: 5in;
+    width: 8in;
+}
+.middle-container{
+    padding: unset;
+}
+#me{
+    padding: unset;
+    margin-top: 0.5in;
+    height: 1in;
+    width: 1in;
+    border-radius: 5in;
+    
+}
+h3{
+    font-family: montserrat;
+    font-size: 30px;
+    font-weight: lighter;
+    background: linear-gradient(to right, #11aaee ,#0077bb, #113355, #0077bb,#11aaee);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    letter-spacing: 5px;
+}
+p{
+    font-family: cursive;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 1%;
+}
+hr{
+    border-style: dotted;
+    border-color: rgb(30, 172, 172);
+    border-width: 3px;
+    width: 5%;
+    margin: 100px auto;
+    opacity: 30%;
+}
+h5{
+    font-family: montserrat;
+    background: linear-gradient(to right, #11aaee ,#0077bb, #113355, #0077bb,#11aaee);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    letter-spacing: 3px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+#browser{
+    padding: unset;
+    float: left;
+    position: relative;
+    height: 0.8in;
+    width: 0.9in;
+    padding-left: 35%;
+    padding-top: 0.1in;
+}
+.skill{
+    padding-left: 41.5%;
+    text-align: right;
+    position: absolute;
+}
+.adven{
+    position: absolute;
+    margin-top: 2in;
+    padding-left: 31%;
+}
+#adventurer{
+    padding-left: 30%;
+}
+#travel-gif{
+    position: absolute;
+    height: 1.1in;
+    width: 1.7in;
+    padding-left: 1.5in;
+}
+.love{
+    float: left;
+    padding-left: 0.7in;
+    text-align: left;
+}
+.hard{
+    margin: unset;
+    margin-top: 4.7in;
+    position: relative;
+    padding-top: 0.95in;
+}
+#hobbies-img{
+    height: 1.1in;
+    width: 1.7n;
+}
+h4{
+    font-family: montserrat;
+    background: linear-gradient(to right, #11aaee ,#0077bb, #113355, #0077bb,#11aaee);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    letter-spacing: 2%;
+}
+button{
+    margin-top: 1in;
+    font-family: montserr;
+    text-transform: uppercase;
+    color: white;
+    height: 0.5in; 
+    width: 15%;
+    background: linear-gradient(to top, #11aaee ,#1a628b, #113355,  #11aaee);
+    border-radius: 10%;
+    margin-bottom: 0.5in;
+}
+button:hover{
+    background: linear-gradient(to bottom #11aaee , #113355,#1a628b, #11aaee);
+    color: rgb(174, 245, 206);
+    height: 0.51in; 
+    width: 15.5%;
+    font-weight: bolder;
+}
+.footer{
+    padding-top: 0.1in;
+    margin-top: 0.5in;
+    background: linear-gradient(to bottom, #cde8f3 ,#78ccfc,  #255381d0);
+    -webkit-background-clip: border-box;
+    padding-bottom: 0.2%;
+}
+a{
+    padding: 3%;
+    position: relative;
+   
+}
+#instagram :hover{
+    height: 2.5%;
+    width: 2.5%;
+}
+#facebook :hover{
+    height: 2.5%;
+    width: 2.5%;
+}
+#twitter :hover{
+    height: 2.5%;
+    width: 2.5%;
+}
+#copy{
+    padding: 1%;
+    margin-top: 0.2in;
+    font-family: montserr;
+    color: white;
+    letter-spacing: 3px;
+}
+
